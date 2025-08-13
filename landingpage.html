@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Gordo Tacos & Mariscos - Links</title>
+  <link rel="icon" href="logo.ico" type="image/x-icon" />
+  <style>
+    :root {
+      --primary-color: #800000;
+      --secondary-color: #FFB347;
+      --dark-color: #1C0A00;
+      --light-color: #ffffff;
+      --text-gold: #FFB347;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: var(--dark-color);
+      color: var(--light-color);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .logo {
+      width: 200px;
+      height: auto;
+      margin: 2rem auto;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .title {
+      color: var(--text-gold);
+      font-size: 2rem;
+      margin: 1rem 0;
+      animation: slideIn 0.5s ease-out;
+    }
+
+    .description {
+      color: var(--light-color);
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .link-button {
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--light-color);
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 2px solid var(--text-gold);
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      animation: slideIn 0.5s ease-out;
+    }
+
+    .link-button:hover {
+      background: var(--text-gold);
+      color: var(--dark-color);
+      transform: translateY(-2px);
+    }
+
+    .link-button i {
+      font-size: 1.5rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 2rem;
+      color: var(--text-gold);
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 480px) {
+      .logo {
+        width: 150px;
+      }
+      .title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="El Gordo Logo" class="logo">
+    <h1 class="title">El Gordo Tacos & Mariscos</h1>
+    <p class="description">Authentic Mexican Cuisine & Fresh Seafood</p>
+    
+    <div class="links">
+      <a href="https://elgordo.netlify.app" class="link-button" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-globe"></i>
+        Visit Our Website
+      </a>
+      <a href="https://www.instagram.com/tacos_mariscos_elgordo" class="link-button" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+        Follow on Instagram
+      </a>
+      <a href="https://www.facebook.com/tacosymariscoselgordo" class="link-button" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-facebook"></i>
+        Like on Facebook
+      </a>
+      <a href="tel:8057690317" class="link-button">
+        <i class="fas fa-phone"></i>
+        (805) 769-0317
+      </a>
+      <a href="tel:8052911727" class="link-button">
+        <i class="fas fa-phone"></i>
+        (805) 291-1727
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 El Gordo Tacos & Mariscos
+  </footer>
+</body>
+</html> 
